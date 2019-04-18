@@ -1,0 +1,13 @@
+.tipField {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+
+}
+.tip {
+    -fx-wrap-text: false;
+    -fx-pref-width: 35px;
+
+}
+#addTipButton{
+    -fx-pref-width: 210;
+}
