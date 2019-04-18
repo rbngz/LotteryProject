@@ -9,6 +9,9 @@ public class LottoController {
         view.getStartButton().setOnAction(event -> {
             view.startGame();
         });
+        model.money.getMoneyProperty().addListener(((observable, oldValue, newValue) -> {
+            view.getCashBar().getMoney().setText(Integer.toString((int)newValue));
+        }));
 
     }
 }

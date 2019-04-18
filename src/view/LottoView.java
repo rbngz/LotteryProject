@@ -14,6 +14,7 @@ public class LottoView {
     private Stage stage;
     private Button startGameButton;
     private HBox tips;
+    private Cashbar cashBar;
 
     public LottoView(Stage stage, LottoModel model){
         this.stage = stage;
@@ -33,7 +34,7 @@ public class LottoView {
     public void startGame(){
         BorderPane gameRoot = new BorderPane();
         MenuBar menu = new MenuBar();
-        Cashbar cashBar = new Cashbar();
+        cashBar = new Cashbar();
         ProbabilityWindow probabilityWindow = new ProbabilityWindow();
         HBox gameBox = new HBox();
         VBox lotteryPane = new VBox();
@@ -61,5 +62,8 @@ public class LottoView {
 
     public Button getStartButton(){
         return startGameButton;
+    }
+    public Cashbar getCashBar(){
+        return cashBar;
     }
 }
