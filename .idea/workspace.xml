@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56982a93-3bfa-4188-9fec-6658285d2f45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lotto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/LottoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/LottoModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Cashbar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/LotteryWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/LottoView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/ProbabilityWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/TipField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/lotto.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/view/LottoView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/view/LottoView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/view/TipField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/view/TipField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/LottoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LottoView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/TipField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/TipField.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/LottoView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-213">
-              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+            <state relative-caret-position="277">
+              <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
               <folding>
                 <element signature="e#1720#1721#0" expanded="true" />
                 <element signature="e#1758#1759#0" expanded="true" />
@@ -67,10 +61,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/view/TipField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="430">
+              <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2826#2827#0" expanded="true" />
+                <element signature="e#2863#2864#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,8 +133,8 @@
         <option value="$PROJECT_DIR$/src/view/LotteryWindow.java" />
         <option value="$PROJECT_DIR$/src/view/ProbabilityWindow.java" />
         <option value="$PROJECT_DIR$/src/view/lotto.css" />
-        <option value="$PROJECT_DIR$/src/view/LottoView.java" />
         <option value="$PROJECT_DIR$/src/view/Cashbar.java" />
+        <option value="$PROJECT_DIR$/src/view/LottoView.java" />
         <option value="$PROJECT_DIR$/src/view/TipField.java" />
       </list>
     </option>
@@ -193,7 +189,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555593773077" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555596322442" />
     <property name="jdk.selected.JAVA_MODULE" value="10" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -239,12 +235,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555575740715</updated>
-      <workItem from="1555575742041" duration="12652000" />
+      <workItem from="1555575742041" duration="14957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12652000" />
+    <option name="totallyTimeSpent" value="14957000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -349,8 +345,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/LottoView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-213">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        <state relative-caret-position="277">
+          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
           <folding>
             <element signature="e#1720#1721#0" expanded="true" />
             <element signature="e#1758#1759#0" expanded="true" />
@@ -360,10 +356,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/TipField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="430">
+          <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2826#2827#0" expanded="true" />
+            <element signature="e#2863#2864#0" expanded="true" />
           </folding>
         </state>
       </provider>

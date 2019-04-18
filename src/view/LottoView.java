@@ -13,6 +13,7 @@ import model.LottoModel;
 public class LottoView {
     private Stage stage;
     private Button startGameButton;
+    private HBox tips;
 
     public LottoView(Stage stage, LottoModel model){
         this.stage = stage;
@@ -36,9 +37,10 @@ public class LottoView {
         ProbabilityWindow probabilityWindow = new ProbabilityWindow();
         HBox gameBox = new HBox();
         VBox lotteryPane = new VBox();
-        HBox tips = new HBox();
-        for (int i = 0; i<5;i++){
-            tips.getChildren().add(new TipField());
+        tips = new HBox();
+        tips.getChildren().add(new TipField(null));
+        for (int i = 1; i<5;i++){
+            tips.getChildren().add(new TipField((TipField)tips.getChildren().get(i-1)));
         }
         LotteryWindow lotteryWindow = new LotteryWindow();
         lotteryPane.getChildren().addAll(lotteryWindow,tips);
