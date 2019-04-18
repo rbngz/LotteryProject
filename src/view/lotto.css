@@ -11,3 +11,6 @@
 #addTipButton{
     -fx-pref-width: 210;
 }
+.pressedNum{
+    -fx-background-color: blue;
+}

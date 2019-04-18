@@ -6,17 +6,21 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
+import java.util.ArrayList;
+
 public class TipField extends GridPane {
     SimpleBooleanProperty activeProperty = new SimpleBooleanProperty();
     Button addTip;
     Label luckyNumbers;
     public static int index = 0;
     TipField previous;
+    ArrayList<Integer> tippedNums;
 
 
     public TipField(TipField previous){
         super();
         this.previous = previous;
+        tippedNums = new ArrayList<>();
         activeProperty.setValue(false);
         //create all numbers 1-42 and set the to disabled by default
         for (int i = 1; i < 43;i++){
@@ -24,6 +28,11 @@ public class TipField extends GridPane {
             this.add(number,(i-1)%6,(i-1)/6 +1);
             number.getStyleClass().add("tip");
             number.setDisable(true);
+            number.setOnAction(event -> {
+                if(!number.getStyleClass().contains("pressedNum")) {
+                    number.getStyleClass().add("pressedNum");
+                } else number.getStyleClass().remove("pressedNum");
+            });
         }
 
         //add the button to add the tip, which enables all number buttons

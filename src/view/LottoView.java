@@ -18,24 +18,10 @@ public class LottoView {
 
     public LottoView(Stage stage, LottoModel model){
         this.stage = stage;
-        VBox entryRoot = new VBox();
-        HBox entryButtons = new HBox();
-        entryButtons.getChildren().add(startGameButton = new Button("Start Game"));
-        entryButtons.getChildren().add(new Button("Exit"));
-        entryRoot.getChildren().add(entryButtons);
-
-        Scene firstScene = new Scene(entryRoot);
-        stage.setScene(firstScene);
-        stage.setTitle("Lottery Game");
-        stage.show();
-
-
-    }
-    public void startGame(){
         BorderPane gameRoot = new BorderPane();
         MenuBar menu = new MenuBar();
         cashBar = new Cashbar();
-        ProbabilityWindow probabilityWindow = new ProbabilityWindow();
+        DialoguePane dialoguePane = new DialoguePane();
         HBox gameBox = new HBox();
         VBox lotteryPane = new VBox();
         tips = new HBox();
@@ -46,7 +32,7 @@ public class LottoView {
         LotteryWindow lotteryWindow = new LotteryWindow();
         lotteryPane.getChildren().addAll(lotteryWindow,tips);
 
-        gameBox.getChildren().addAll(lotteryPane, probabilityWindow);
+        gameBox.getChildren().addAll(lotteryPane, dialoguePane);
 
         gameRoot.setTop(menu);
         gameRoot.setBottom(cashBar);
@@ -58,6 +44,13 @@ public class LottoView {
                 getClass().getResource("lotto.css").toExternalForm());
         stage.setScene(gameScene);
 
+
+        stage.show();
+
+
+    }
+    public void startGame(){
+
     }
 
     public Button getStartButton(){
@@ -65,5 +58,8 @@ public class LottoView {
     }
     public Cashbar getCashBar(){
         return cashBar;
+    }
+    public HBox getTips(){
+        return tips;
     }
 }
