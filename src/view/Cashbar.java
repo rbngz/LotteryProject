@@ -8,13 +8,16 @@ import model.Cash;
 public class Cashbar extends HBox {
     private Label moneyLabel;
     private Button submitTips;
+    private Label totalBet;
     private Label betLabel;
 
 
     public Cashbar(){
         moneyLabel = new Label("100");
+        totalBet = new Label("Total Bet");
         submitTips = new Button("Submit Tips");
-        this.getChildren().addAll(moneyLabel, submitTips);
+
+        this.getChildren().addAll(moneyLabel,totalBet, submitTips);
     }
 
     public Label getMoney() {
@@ -24,4 +27,7 @@ public class Cashbar extends HBox {
         return submitTips;
     }
 
+    public void setTotalBet(int i) {
+        this.totalBet.setText(Integer.toString(i*3));
+    }
 }

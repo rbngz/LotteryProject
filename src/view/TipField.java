@@ -1,6 +1,7 @@
 package view;
 
 import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -9,6 +10,7 @@ import javafx.scene.layout.GridPane;
 import java.util.ArrayList;
 
 public class TipField extends GridPane {
+    public static SimpleIntegerProperty totalActive = new SimpleIntegerProperty();
     SimpleBooleanProperty activeProperty = new SimpleBooleanProperty();
     Button addTip;
     Label luckyNumbers;
@@ -45,6 +47,7 @@ public class TipField extends GridPane {
         addTip.setOnAction(event -> {
             if (!activeProperty.get()) {
                 this.activeProperty.setValue(true);
+                totalActive.setValue(totalActive.getValue()+1);
                 addTip.setText("Remove Tip");
                 for (int i = 1; i < 43; i++) {
                     this.getChildren().get(i - 1).setDisable(false);
@@ -59,6 +62,7 @@ public class TipField extends GridPane {
 
             } else{
                 this.activeProperty.setValue(false);
+                totalActive.setValue(totalActive.getValue()-1);
                 addTip.setText("Add Tip");
                 for (int i = 1; i < 43; i++) {
                     this.getChildren().get(i - 1).setDisable(true);

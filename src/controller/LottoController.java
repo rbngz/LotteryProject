@@ -31,6 +31,9 @@ public class LottoController {
             }
             view.getDialoguePane().updateDialogue(model.tips.getTips());
         });
+        TipField.totalActive.addListener(((observable, oldValue, newValue) -> {
+            view.getCashBar().setTotalBet((int) newValue);
+        }));
 
 
 
