@@ -16,20 +16,23 @@ public class LottoController {
         }));
 
         view.getCashBar().getSubmitTipsButton().setOnAction(event -> {
-            TipField tipfield = (TipField) view.getTips().getChildren().get(0);
-            if (tipfield.getActiveProperty().getValue()) {
-                ArrayList<Integer> tip = new ArrayList<>();
-                for (int i = 1; i < 43; i++) {
-                    if (tipfield.getChildren().get(i).getStyleClass().contains("pressedNum")) {
-                        Button tipped = (Button) tipfield.getChildren().get(i);
-                        tip.add(Integer.parseInt(tipped.getText()));
+            for(int i = 0; i<5;i++) {
+                TipField tipfield = (TipField) view.getTips().getChildren().get(i);
+                if (tipfield.getActiveProperty().getValue()) {
+                    ArrayList<Integer> tip = new ArrayList<>();
+                    for (int j = 1; j < 43; j++) {
+                        if (tipfield.getChildren().get(j).getStyleClass().contains("pressedNum")) {
+                            Button tipped = (Button) tipfield.getChildren().get(j);
+                            tip.add(Integer.parseInt(tipped.getText()));
+                        }
                     }
+                    model.tips.addTip(tip);
                 }
-                model.tips.addTip(tip);
-                System.out.println(model.tips.getTip(0));
             }
-
+            view.getDialoguePane().updateDialogue(model.tips.getTips());
         });
+
+
 
     }
 }

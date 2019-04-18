@@ -14,6 +14,7 @@ public class Tips {
     public ArrayList<Integer> getTip(int i){
         return tips.get(i);
     }
+    public ArrayList<ArrayList<Integer>> getTips(){return tips;}
 
 
 }

@@ -15,13 +15,14 @@ public class LottoView {
     private Button startGameButton;
     private HBox tips;
     private Cashbar cashBar;
+    private DialoguePane dialoguePane;
 
     public LottoView(Stage stage, LottoModel model){
         this.stage = stage;
         BorderPane gameRoot = new BorderPane();
         MenuBar menu = new MenuBar();
         cashBar = new Cashbar();
-        DialoguePane dialoguePane = new DialoguePane();
+        dialoguePane = new DialoguePane();
         HBox gameBox = new HBox();
         VBox lotteryPane = new VBox();
         tips = new HBox();
@@ -61,5 +62,9 @@ public class LottoView {
     }
     public HBox getTips(){
         return tips;
+    }
+
+    public DialoguePane getDialoguePane() {
+        return dialoguePane;
     }
 }
