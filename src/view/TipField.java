@@ -69,7 +69,8 @@ public class TipField extends GridPane {
                 addTip.setText("Add Tip");
                 for (int i = 1; i < 51; i++) {
                     this.getChildren().get(i - 1).getStyleClass().remove("pressedNum");
-                    this.getChildren().get(i - 1).setDisable(true);
+                    if(i!=43)this.getChildren().get(i - 1).setDisable(true);
+
                 }
                 this.luckyNumbers.setStyle("-fx-text-fill: grey");
                 if(previous!=null) previous.addTip.setDisable(false);
@@ -78,7 +79,7 @@ public class TipField extends GridPane {
         if(previous!=null) {
             previous.activeProperty.addListener(((observable, oldValue, newValue) -> {
                 if (newValue == true) addTip.setDisable(false);
-                else addTip.setDisable(false);
+                else addTip.setDisable(true);
 
             }));
         }
