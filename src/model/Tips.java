@@ -27,6 +27,9 @@ public class Tips {
         }
         return allValid;
     }
+    public void removeTips(){
+        tips.clear();
+    }
 
 
 }

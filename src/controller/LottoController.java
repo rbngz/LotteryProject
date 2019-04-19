@@ -17,6 +17,7 @@ public class LottoController {
         }));
 
         view.getCashBar().getSubmitTipsButton().setOnAction(event -> {
+            model.tips.removeTips();
             for(int i = 0; i<5;i++) {
                 TipField tipfield = (TipField) view.getTips().getChildren().get(i);
                 if (tipfield.getActiveProperty().getValue()) {

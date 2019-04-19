@@ -8,23 +8,30 @@ import java.util.ArrayList;
 
 public class DialoguePane extends VBox {
 
+
     public DialoguePane(){
-        for(int i = 0; i<5; i++){
-            Label tipLabel = new Label();
-            tipLabel.setPrefWidth(100);
+        this.setPrefWidth(200);
+    }
+    public void updateDialogue(ArrayList<ArrayList<Integer>> tips){
+        this.getChildren().clear();
+
+        this.getChildren().add(new Label("Total Tips: "+tips.size()));
+
+        for (int i = 0; i< tips.size();i++){
+
+            Label tipLabel = new Label(showTip(tips.get(i)));
             this.getChildren().add(tipLabel);
         }
 
+
     }
-    public void updateDialogue(ArrayList<ArrayList<Integer>> tips){
-
-        for (int i = 0; i< tips.size();i++){
-            Label tipLabel = (Label) this.getChildren().get(i);
-            tipLabel.setText(null);
-            tipLabel.setText(tips.get(i).toString());
+    private String showTip(ArrayList<Integer> tip){
+        String tipString ="" + tip.get(0);
+        for (int i = 1; i<6;i++){
+            tipString+= ", "+ tip.get(i);
         }
-
-
+        tipString += " + " + tip.get(tip.size()-1);
+        return tipString;
     }
 
 }
