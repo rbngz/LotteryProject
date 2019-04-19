@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56982a93-3bfa-4188-9fec-6658285d2f45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/view/Ball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/controller/LottoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/controller/LottoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/view/Cashbar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/view/Cashbar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/view/DialoguePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/view/DialoguePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/view/LotteryWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/view/LotteryWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/view/LottoView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/view/LottoView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/view/lotto.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/view/lotto.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/LottoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LottoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Cash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Cashbar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Cashbar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/DialoguePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/DialoguePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/LotteryWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LotteryWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/LottoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LottoView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/lotto.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/lotto.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,15 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lotto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/LottoModel.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -39,46 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/LottoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Tips.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-              <folding>
-                <element signature="e#142#143#0" expanded="true" />
-                <element signature="e#181#182#0" expanded="true" />
-                <element signature="e#206#207#0" expanded="true" />
-                <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#750#751#0" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/LottoView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-              <folding>
-                <element signature="e#1720#1721#0" expanded="true" />
-                <element signature="e#1758#1759#0" expanded="true" />
-                <element signature="e#2066#2067#0" expanded="true" />
-                <element signature="e#2095#2096#0" expanded="true" />
-                <element signature="e#2103#2104#0" expanded="true" />
-                <element signature="e#2130#2131#0" expanded="true" />
-                <element signature="e#1805#1806#0" expanded="true" />
-                <element signature="e#1840#1841#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="427">
+              <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -98,12 +54,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/TipField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="976">
+            <state relative-caret-position="241">
               <caret line="79" column="58" selection-start-line="79" selection-start-column="58" selection-end-line="79" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3370#3371#0" expanded="true" />
                 <element signature="e#3407#3408#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/LottoView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="674">
+              <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="29" />
+              <folding>
+                <element signature="e#1805#1806#0" expanded="true" />
+                <element signature="e#1840#1841#0" expanded="true" />
+                <element signature="e#1914#1915#0" expanded="true" />
+                <element signature="e#1950#1951#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,16 +99,40 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/lotto.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view/LotteryWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="360">
+              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/Ball.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/lotto.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/Cashbar.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -178,17 +173,18 @@
         <option value="$PROJECT_DIR$/src/Lotto.java" />
         <option value="$PROJECT_DIR$/src/LottoController.java" />
         <option value="$PROJECT_DIR$/src/LottoView.java" />
-        <option value="$PROJECT_DIR$/src/view/LotteryWindow.java" />
         <option value="$PROJECT_DIR$/src/view/ProbabilityWindow.java" />
-        <option value="$PROJECT_DIR$/src/view/lotto.css" />
         <option value="$PROJECT_DIR$/src/model/LottoModel.java" />
-        <option value="$PROJECT_DIR$/src/view/LottoView.java" />
         <option value="$PROJECT_DIR$/src/view/TipField.java" />
         <option value="$PROJECT_DIR$/src/model/Tips.java" />
         <option value="$PROJECT_DIR$/src/view/DialoguePane.java" />
         <option value="$PROJECT_DIR$/src/view/Cashbar.java" />
         <option value="$PROJECT_DIR$/src/model/Cash.java" />
+        <option value="$PROJECT_DIR$/src/view/Ball.java" />
+        <option value="$PROJECT_DIR$/src/view/lotto.css" />
+        <option value="$PROJECT_DIR$/src/view/LottoView.java" />
         <option value="$PROJECT_DIR$/src/controller/LottoController.java" />
+        <option value="$PROJECT_DIR$/src/view/LotteryWindow.java" />
       </list>
     </option>
   </component>
@@ -223,6 +219,12 @@
               <item name="LotteryProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="LotteryProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LotteryProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LotteryProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -242,7 +244,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555676763457" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555683124062" />
     <property name="jdk.selected.JAVA_MODULE" value="10" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -293,13 +295,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28008000" />
+    <option name="totallyTimeSpent" value="31236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10866911" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10866911" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -307,8 +309,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17244898" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17244898" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.59183675" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -347,31 +349,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/view/GameView.java" />
-    <entry file="file://$PROJECT_DIR$/src/view/LotteryWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ProbabilityWindow.java" />
-    <entry file="file://$PROJECT_DIR$/src/view/LottoView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-          <folding>
-            <element signature="e#1720#1721#0" expanded="true" />
-            <element signature="e#1758#1759#0" expanded="true" />
-            <element signature="e#2066#2067#0" expanded="true" />
-            <element signature="e#2095#2096#0" expanded="true" />
-            <element signature="e#2103#2104#0" expanded="true" />
-            <element signature="e#2130#2131#0" expanded="true" />
-            <element signature="e#1805#1806#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lotto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -396,46 +374,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/TipField.java">
+    <entry file="file://$PROJECT_DIR$/src/view/Cashbar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="976">
-          <caret line="79" column="58" selection-start-line="79" selection-start-column="58" selection-end-line="79" selection-end-column="58" />
+        <state relative-caret-position="375">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3370#3371#0" expanded="true" />
-            <element signature="e#3407#3408#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/LottoModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/lotto.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/DialoguePane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/LottoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -456,18 +407,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/Cashbar.java">
+    <entry file="file://$PROJECT_DIR$/src/model/LottoModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        <state relative-caret-position="105">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/DialoguePane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#216#217#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/TipField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="79" column="58" selection-start-line="79" selection-start-column="58" selection-end-line="79" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3370#3371#0" expanded="true" />
+            <element signature="e#3407#3408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/lotto.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/LottoView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="29" />
+          <folding>
+            <element signature="e#1805#1806#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+            <element signature="e#1914#1915#0" expanded="true" />
+            <element signature="e#1950#1951#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/LottoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/LotteryWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

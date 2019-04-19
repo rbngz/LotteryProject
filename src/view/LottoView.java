@@ -16,6 +16,7 @@ public class LottoView {
     private HBox tips;
     private Cashbar cashBar;
     private DialoguePane dialoguePane;
+    private LotteryWindow lotteryWindow;
 
     public LottoView(Stage stage, LottoModel model){
         this.stage = stage;
@@ -30,7 +31,7 @@ public class LottoView {
         for (int i = 1; i<5;i++){
             tips.getChildren().add(new TipField((TipField)tips.getChildren().get(i-1)));
         }
-        LotteryWindow lotteryWindow = new LotteryWindow();
+        lotteryWindow = new LotteryWindow();
         lotteryPane.getChildren().addAll(lotteryWindow,tips);
 
         gameBox.getChildren().addAll(lotteryPane, dialoguePane);
@@ -66,5 +67,9 @@ public class LottoView {
 
     public DialoguePane getDialoguePane() {
         return dialoguePane;
+    }
+
+    public LotteryWindow getLotteryWindow() {
+        return lotteryWindow;
     }
 }
