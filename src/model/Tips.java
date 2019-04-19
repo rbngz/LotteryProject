@@ -17,4 +17,16 @@ public class Tips {
     public ArrayList<ArrayList<Integer>> getTips(){return tips;}
 
 
+    public boolean checkTips(){
+        //TODO edit: check that only one lucky number is entered
+        boolean allValid = true;
+        for (int i = 0; i<tips.size();i++) {
+            if (!(tips.get(i).size() == 7 && tips.get(i).get(6) <= 6)) {
+                allValid=false;
+            }
+        }
+        return allValid;
+    }
+
+
 }

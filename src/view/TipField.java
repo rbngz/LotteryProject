@@ -44,6 +44,9 @@ public class TipField extends GridPane {
         if(previous!=null){
             addTip.setDisable(true);
         }
+
+        //if button is pressed, the text changes to "remove tip" and vice versa.
+        //all buttons get enabled/disabled
         addTip.setOnAction(event -> {
             if (!activeProperty.get()) {
                 this.activeProperty.setValue(true);
@@ -64,11 +67,9 @@ public class TipField extends GridPane {
                 this.activeProperty.setValue(false);
                 totalActive.setValue(totalActive.getValue()-1);
                 addTip.setText("Add Tip");
-                for (int i = 1; i < 43; i++) {
+                for (int i = 1; i < 51; i++) {
+                    this.getChildren().get(i - 1).getStyleClass().remove("pressedNum");
                     this.getChildren().get(i - 1).setDisable(true);
-                }
-                for (int i = 1; i< 7 ; i++){
-                    this.getChildren().get(43+i).setDisable(true);
                 }
                 this.luckyNumbers.setStyle("-fx-text-fill: grey");
                 if(previous!=null) previous.addTip.setDisable(false);
@@ -77,7 +78,7 @@ public class TipField extends GridPane {
         if(previous!=null) {
             previous.activeProperty.addListener(((observable, oldValue, newValue) -> {
                 if (newValue == true) addTip.setDisable(false);
-                else addTip.setDisable(true);
+                else addTip.setDisable(false);
 
             }));
         }
@@ -90,6 +91,11 @@ public class TipField extends GridPane {
             this.add(number,i-1,9);
             number.getStyleClass().add("tip");
             number.setDisable(true);
+            number.setOnAction(event -> {
+                if(!number.getStyleClass().contains("pressedNum")) {
+                    number.getStyleClass().add("pressedNum");
+                } else number.getStyleClass().remove("pressedNum");
+            });
         }
         this.getStyleClass().add("tipField");
     }
