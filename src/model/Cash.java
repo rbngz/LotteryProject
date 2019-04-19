@@ -3,10 +3,9 @@ package model;
 import javafx.beans.property.SimpleIntegerProperty;
 
 public class Cash {
-    int money;
     SimpleIntegerProperty moneyProperty = new SimpleIntegerProperty();
     public Cash(){
-        money = 100;
+        moneyProperty.setValue(100);
     }
 
     public SimpleIntegerProperty getMoneyProperty() {
@@ -14,10 +13,10 @@ public class Cash {
     }
 
     public int getMoney() {
-        return money;
+        return moneyProperty.getValue();
     }
 
     public void setMoney(int money) {
-        this.money = money;
+        moneyProperty.setValue(money);
     }
 }

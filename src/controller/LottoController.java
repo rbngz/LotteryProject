@@ -13,7 +13,7 @@ public class LottoController {
 
     public LottoController(LottoModel model, LottoView view){
         model.money.getMoneyProperty().addListener(((observable, oldValue, newValue) -> {
-            view.getCashBar().getMoney().setText(Integer.toString((int)newValue));
+            view.getCashBar().setMoneyLabel((int)newValue);
         }));
 
         view.getCashBar().getSubmitTipsButton().setOnAction(event -> {
@@ -28,17 +28,12 @@ public class LottoController {
                             tip.add(Integer.parseInt(tipped.getText()));
                         }
                     }
-                    /*for (int j = 1; j< 7 ; j++){
-                        if(tipfield.getChildren().get(43+i).getStyleClass().contains("pressedNum")){
-                            Button tipped = (Button) tipfield.getChildren().get(j);
-                            tip.add(Integer.parseInt(tipped.getText()));
-                        }
-                    }*/
                     model.tips.addTip(tip);
                 }
             }
             if(model.tips.checkTips()) {
                 view.getDialoguePane().updateDialogue(model.tips.getTips());
+                model.money.setMoney(model.money.getMoney()-(model.tips.getTips().size())*3);
             } else{
                 Alert errorAlert = new Alert(Alert.AlertType.ERROR);
                 errorAlert.setHeaderText("Tips not valid");
