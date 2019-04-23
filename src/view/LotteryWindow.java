@@ -14,10 +14,11 @@ public class LotteryWindow extends HBox {
         super();
         this.setPrefHeight(160);
     }
-    public void drawNumbers(){
+    public void drawNumbers(ArrayList<Integer> numbers){
+        this.getChildren().clear();
         int ballNum = 0;
         for (int i = 0;i<7;i++){
-            Ball ball = new Ball();
+            Ball ball = new Ball(numbers.get(i));
             this.getChildren().add(ball);
             HBox.setMargin(ball,new Insets(20));
 

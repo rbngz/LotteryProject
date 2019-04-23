@@ -32,9 +32,10 @@ public class LottoController {
                 }
             }
             if(model.tips.checkTips()) {
+                //run draw when all tips are valid
                 view.getDialoguePane().updateDialogue(model.tips.getTips());
                 model.money.setMoney(model.money.getMoney()-(model.tips.getTips().size())*3);
-                view.getLotteryWindow().drawNumbers();
+                view.getLotteryWindow().drawNumbers(model.numberGenerator.generateNumbers());
             } else{
                 Alert errorAlert = new Alert(Alert.AlertType.ERROR);
                 errorAlert.setHeaderText("Tips not valid");

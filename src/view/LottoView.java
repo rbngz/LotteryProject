@@ -39,6 +39,7 @@ public class LottoView {
         gameRoot.setTop(menu);
         gameRoot.setBottom(cashBar);
         gameRoot.setCenter(gameBox);
+        gameRoot.setStyle("-fx-background-color: rgb(255,104,104)");
 
 
         Scene gameScene = new Scene(gameRoot);
