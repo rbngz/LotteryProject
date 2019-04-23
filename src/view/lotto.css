@@ -22,3 +22,9 @@
 #bottomBar{
     -fx-spacing: 15px;
 }
+.correctTip {
+    -fx-background-color: green;
+}
+.wrongTip{
+    -fx-background-color: red;
+}

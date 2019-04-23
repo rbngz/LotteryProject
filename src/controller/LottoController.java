@@ -15,7 +15,7 @@ public class LottoController {
         model.money.getMoneyProperty().addListener(((observable, oldValue, newValue) -> {
             view.getCashBar().setMoneyLabel((int)newValue);
         }));
-
+        //Start of simulation
         view.getCashBar().getSubmitTipsButton().setOnAction(event -> {
             model.tips.removeTips();
             for(int i = 0; i<5;i++) {
@@ -33,9 +33,11 @@ public class LottoController {
             }
             if(model.tips.checkTips()) {
                 //run draw when all tips are valid
+                ArrayList<Integer> numbers = model.numberGenerator.generateNumbers();
                 view.getDialoguePane().updateDialogue(model.tips.getTips());
                 model.money.setMoney(model.money.getMoney()-(model.tips.getTips().size())*3);
-                view.getLotteryWindow().drawNumbers(model.numberGenerator.generateNumbers());
+                view.getLotteryWindow().drawNumbers(numbers,view);
+
             } else{
                 Alert errorAlert = new Alert(Alert.AlertType.ERROR);
                 errorAlert.setHeaderText("Tips not valid");
