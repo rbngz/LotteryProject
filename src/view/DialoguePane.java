@@ -3,6 +3,7 @@ package view;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import model.Jackpot;
 
 import java.util.ArrayList;
 
@@ -36,6 +37,16 @@ public class DialoguePane extends VBox {
         }
         tipString += " + " + tip.get(tip.size()-1);
         return tipString;
+    }
+    public void showAllWinners(int[] winnerCount){
+        this.getChildren().add(new Label("Jackpot Winners: "+winnerCount[0]));
+        for(int i = 1;i<winnerCount.length;i++){
+            if(i%2==0) {
+                this.getChildren().add(new Label("Winner " + 1+":"+winnerCount[i]));
+            } else {
+                this.getChildren().add(new Label("Winner :"+winnerCount[i]));
+            }
+        }
     }
 
 }

@@ -43,6 +43,8 @@ public class LottoController {
                 view.getDialoguePane().updateDialogue(model.tips.getTips());
                 model.money.setMoney(model.money.getMoney()-(model.tips.getTips().size())*3);
                 view.getLotteryWindow().drawNumbers(numbers,view);
+                view.getDialoguePane().showAllWinners(model.jackpot.runSimulation());
+
                 view.getDialoguePane().showEvaluation(model.tips.evaluate(numbers));
             } else{
                 Alert errorAlert = new Alert(Alert.AlertType.ERROR);
