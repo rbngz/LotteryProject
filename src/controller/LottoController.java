@@ -34,12 +34,11 @@ public class LottoController {
             if(model.tips.checkTips()) {
                 //run draw when all tips are valid
                 ArrayList<Integer> numbers = model.numberGenerator.generateNumbers();
-                /*for (int i = 0;i<TipField.totalActive.getValue();i++){
+                for (int i = 0;i<5;i++){
                     TipField tipfield = (TipField) view.getTips().getChildren().get(i);
-                    for(int j=0; j<tipfield.getChildren().size();i++){
-                        tipfield.getChildren().get(j).setDisable(true);
-                    }
-                }*/
+                    tipfield.disableField();
+                }
+                view.getCashBar().getSubmitTipsButton().setDisable(true);
                 view.getDialoguePane().updateDialogue(model.tips.getTips());
                 model.money.setMoney(model.money.getMoney()-(model.tips.getTips().size())*3);
                 view.getLotteryWindow().drawNumbers(numbers,view);
@@ -59,8 +58,15 @@ public class LottoController {
             //remove all active tips when "new game" button is pressed
             for(int i = TipField.totalActive.getValue(); i>0;i--){
                 TipField tipfield = (TipField) view.getTips().getChildren().get(i-1);
+                tipfield.addTip.setDisable(false);
                 tipfield.addTip.fire();
             }
+            if(TipField.totalActive.getValue()==0){
+                TipField tipField = (TipField) view.getTips().getChildren().get(0);
+                tipField.addTip.setDisable(false);
+            }
+            view.getCashBar().getSubmitTipsButton().setDisable(false);
+
             view.getCashBar().getNewGame().setDisable(true);
         });
 

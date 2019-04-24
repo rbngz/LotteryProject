@@ -2,9 +2,12 @@ package view;
 
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleIntegerProperty;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 
 import java.util.ArrayList;
@@ -19,6 +22,7 @@ public class TipField extends GridPane {
     ArrayList<Integer> tippedNums;
     private SimpleIntegerProperty tipCount;
     Label tipCountLabel;
+    public Button randomTip;
 
 
     public TipField(TipField previous){
@@ -116,10 +120,27 @@ public class TipField extends GridPane {
         });
         tipCountLabel.setStyle("-fx-text-fill: grey");
         this.add(tipCountLabel,0,10,REMAINING,1);
+        randomTip = new Button("");
+        this.add(randomTip,5,10,REMAINING,1);
+        Image randomIcon = new Image(this.getClass().getClassLoader().getResourceAsStream("images/random.png"));
+        ImageView imv = new ImageView(randomIcon);
+        imv.setPreserveRatio(true);
+        imv.setFitHeight(15);
+        randomTip.setGraphic(imv);
+
+
 
         this.getStyleClass().add("tipField");
     }
     public SimpleBooleanProperty getActiveProperty(){
         return activeProperty;
+    }
+    public void disableField(){
+        for (int i = 0; i<this.getChildren().size();i++){
+            this.getChildren().get(i).setDisable(true);
+        }
+    }
+    public Button getRandomTip(){
+        return randomTip;
     }
 }

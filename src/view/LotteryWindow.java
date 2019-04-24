@@ -52,6 +52,9 @@ public class LotteryWindow extends HBox {
                         }
                     }
                 }
+                if (index==6&&TipField.totalActive.getValue()==0){
+                    view.getCashBar().getNewGame().setDisable(false);
+                }
             });
             sqt.play();
 
