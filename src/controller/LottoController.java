@@ -34,10 +34,16 @@ public class LottoController {
             if(model.tips.checkTips()) {
                 //run draw when all tips are valid
                 ArrayList<Integer> numbers = model.numberGenerator.generateNumbers();
+                /*for (int i = 0;i<TipField.totalActive.getValue();i++){
+                    TipField tipfield = (TipField) view.getTips().getChildren().get(i);
+                    for(int j=0; j<tipfield.getChildren().size();i++){
+                        tipfield.getChildren().get(j).setDisable(true);
+                    }
+                }*/
                 view.getDialoguePane().updateDialogue(model.tips.getTips());
                 model.money.setMoney(model.money.getMoney()-(model.tips.getTips().size())*3);
                 view.getLotteryWindow().drawNumbers(numbers,view);
-
+                view.getDialoguePane().showEvaluation(model.tips.evaluate(numbers));
             } else{
                 Alert errorAlert = new Alert(Alert.AlertType.ERROR);
                 errorAlert.setHeaderText("Tips not valid");

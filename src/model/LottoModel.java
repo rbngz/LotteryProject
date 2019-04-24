@@ -8,5 +8,6 @@ public class LottoModel {
         money = new Cash();
         tips = new Tips();
         numberGenerator = new NumberGenerator();
+
     }
 }

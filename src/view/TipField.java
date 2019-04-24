@@ -67,6 +67,7 @@ public class TipField extends GridPane {
                     this.getChildren().get(43+i).setDisable(false);
                 }
                 this.luckyNumbers.setStyle(null);
+                this.tipCountLabel.setStyle(null);
                 if(previous!=null) {
                     previous.addTip.setDisable(true);
                 }
@@ -82,6 +83,8 @@ public class TipField extends GridPane {
 
                 }
                 this.luckyNumbers.setStyle("-fx-text-fill: grey");
+                this.tipCountLabel.setStyle("-fx-text-fill: grey");
+
                 if(previous!=null) previous.addTip.setDisable(false);
             }
         });
@@ -111,6 +114,7 @@ public class TipField extends GridPane {
         tipCount.addListener((observable, oldValue, newValue) ->{
             tipCountLabel.setText("Selected Numbers: "+newValue+"/6");
         });
+        tipCountLabel.setStyle("-fx-text-fill: grey");
         this.add(tipCountLabel,0,10,REMAINING,1);
 
         this.getStyleClass().add("tipField");

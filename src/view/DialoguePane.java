@@ -23,11 +23,14 @@ public class DialoguePane extends VBox {
             Label tipLabel = new Label(showTip(tips.get(i)));
             this.getChildren().add(tipLabel);
         }
-
-
+    }
+    public void showEvaluation(int[] correctCount){
+        for(int i = 0;i<correctCount.length;i++){
+            this.getChildren().add(new Label("Tip " + (i+1) + " right guesses: "+ correctCount[i]));
+        }
     }
     private String showTip(ArrayList<Integer> tip){
-        String tipString ="" + tip.get(0);
+        String tipString = tip.get(0).toString();
         for (int i = 1; i<6;i++){
             tipString+= ", "+ tip.get(i);
         }
