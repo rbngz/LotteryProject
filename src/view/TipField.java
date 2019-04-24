@@ -17,11 +17,14 @@ public class TipField extends GridPane {
     public static int index = 0;
     TipField previous;
     ArrayList<Integer> tippedNums;
+    private SimpleIntegerProperty tipCount;
+    Label tipCountLabel;
 
 
     public TipField(TipField previous){
         super();
         this.previous = previous;
+        tipCount= new SimpleIntegerProperty(0);
         tippedNums = new ArrayList<>();
         activeProperty.setValue(false);
         //create all numbers 1-42 and set the to disabled by default
@@ -31,9 +34,14 @@ public class TipField extends GridPane {
             number.getStyleClass().add("tip");
             number.setDisable(true);
             number.setOnAction(event -> {
-                if(!number.getStyleClass().contains("pressedNum")) {
-                    number.getStyleClass().add("pressedNum");
-                } else number.getStyleClass().remove("pressedNum");
+                //count how many numbers are selected and restrict user to 6 numbers
+                    if (!number.getStyleClass().contains("pressedNum")&&tipCount.getValue()<6) {
+                        number.getStyleClass().add("pressedNum");
+                        tipCount.setValue(tipCount.getValue() + 1);
+                    } else if(number.getStyleClass().contains("pressedNum")){
+                        number.getStyleClass().remove("pressedNum");
+                        tipCount.setValue(tipCount.getValue() - 1);
+                }
             });
         }
 
@@ -67,8 +75,9 @@ public class TipField extends GridPane {
                 this.activeProperty.setValue(false);
                 totalActive.setValue(totalActive.getValue()-1);
                 addTip.setText("Add Tip");
+                tipCount.setValue(0);
                 for (int i = 1; i < 51; i++) {
-                    this.getChildren().get(i - 1).getStyleClass().remove("pressedNum");
+                    this.getChildren().get(i - 1).getStyleClass().removeAll("pressedNum","correctTip","wrongTip");
                     if(i!=43)this.getChildren().get(i - 1).setDisable(true);
 
                 }
@@ -98,6 +107,12 @@ public class TipField extends GridPane {
                 } else number.getStyleClass().remove("pressedNum");
             });
         }
+        tipCountLabel = new Label("Selected Numbers: "+tipCount.getValue()+"/6");
+        tipCount.addListener((observable, oldValue, newValue) ->{
+            tipCountLabel.setText("Selected Numbers: "+newValue+"/6");
+        });
+        this.add(tipCountLabel,0,10,REMAINING,1);
+
         this.getStyleClass().add("tipField");
     }
     public SimpleBooleanProperty getActiveProperty(){
