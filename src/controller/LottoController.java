@@ -3,6 +3,7 @@ package controller;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import model.LottoModel;
+import model.NumberGenerator;
 import view.Cashbar;
 import view.LottoView;
 import view.TipField;
@@ -69,6 +70,23 @@ public class LottoController {
 
             view.getCashBar().getNewGame().setDisable(true);
         });
+        for(int i = 0;i<5;i++){
+            TipField tipField = (TipField) view.getTips().getChildren().get(i);
+            tipField.getRandomTip().setOnAction(event -> {
+                //first remove all selected numbers
+                for (int j = 0; j < tipField.getChildren().size(); j++) {
+                    tipField.getChildren().get(j).getStyleClass().remove("pressedNum");
+                }
+                //generate random numbers and mark them as pressed
+                ArrayList<Integer> randomTip = model.numberGenerator.generateNumbers();
+                System.out.println(randomTip);
+                for (int j = 0;j<randomTip.size()-1;j++){
+                    tipField.getChildren().get(randomTip.get(j)-1).getStyleClass().add("pressedNum");
+                }
+                tipField.getChildren().get(randomTip.get(randomTip.size()-1)+43).getStyleClass().add("pressedNum");
+                tipField.tipCount.setValue(6);
+            });
+        }
 
 
 

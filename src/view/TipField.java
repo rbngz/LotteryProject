@@ -20,7 +20,7 @@ public class TipField extends GridPane {
     public static int index = 0;
     TipField previous;
     ArrayList<Integer> tippedNums;
-    private SimpleIntegerProperty tipCount;
+    public SimpleIntegerProperty tipCount;
     Label tipCountLabel;
     public Button randomTip;
 
@@ -64,14 +64,11 @@ public class TipField extends GridPane {
                 this.activeProperty.setValue(true);
                 totalActive.setValue(totalActive.getValue()+1);
                 addTip.setText("Remove Tip");
-                for (int i = 1; i < 43; i++) {
-                    this.getChildren().get(i - 1).setDisable(false);
+                for (int i = 0; i < this.getChildren().size(); i++) {
+                    this.getChildren().get(i).setDisable(false);
                 }
-                for (int i = 1; i< 7 ; i++){
-                    this.getChildren().get(43+i).setDisable(false);
-                }
-                this.luckyNumbers.setStyle(null);
-                this.tipCountLabel.setStyle(null);
+
+
                 if(previous!=null) {
                     previous.addTip.setDisable(true);
                 }
@@ -81,27 +78,23 @@ public class TipField extends GridPane {
                 totalActive.setValue(totalActive.getValue()-1);
                 addTip.setText("Add Tip");
                 tipCount.setValue(0);
-                for (int i = 1; i < 51; i++) {
-                    this.getChildren().get(i - 1).getStyleClass().removeAll("pressedNum","correctTip","wrongTip");
-                    if(i!=43)this.getChildren().get(i - 1).setDisable(true);
-
+                for (int i = 0; i < this.getChildren().size(); i++) {
+                    this.getChildren().get(i).getStyleClass().removeAll("pressedNum","correctTip","wrongTip");
+                    if(i!=42)this.getChildren().get(i).setDisable(true);
                 }
-                this.luckyNumbers.setStyle("-fx-text-fill: grey");
-                this.tipCountLabel.setStyle("-fx-text-fill: grey");
-
                 if(previous!=null) previous.addTip.setDisable(false);
             }
         });
         if(previous!=null) {
             previous.activeProperty.addListener(((observable, oldValue, newValue) -> {
-                if (newValue == true) addTip.setDisable(false);
+                if (newValue) addTip.setDisable(false);
                 else addTip.setDisable(true);
 
             }));
         }
         //
         luckyNumbers = new Label("Lucky Numbers");
-        luckyNumbers.setStyle("-fx-text-fill: grey");
+        luckyNumbers.setDisable(true);
         this.add(luckyNumbers,0,8,REMAINING,1);
         for (int i = 1; i< 7 ; i++){
             Button number = new Button(Integer.toString(i));
@@ -118,7 +111,7 @@ public class TipField extends GridPane {
         tipCount.addListener((observable, oldValue, newValue) ->{
             tipCountLabel.setText("Selected Numbers: "+newValue+"/6");
         });
-        tipCountLabel.setStyle("-fx-text-fill: grey");
+        tipCountLabel.setDisable(true);
         this.add(tipCountLabel,0,10,REMAINING,1);
         randomTip = new Button("");
         this.add(randomTip,5,10,REMAINING,1);
@@ -127,6 +120,7 @@ public class TipField extends GridPane {
         imv.setPreserveRatio(true);
         imv.setFitHeight(15);
         randomTip.setGraphic(imv);
+        randomTip.setDisable(true);
 
 
 
