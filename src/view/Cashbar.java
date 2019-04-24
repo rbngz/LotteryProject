@@ -11,6 +11,7 @@ public class Cashbar extends HBox {
     private Button submitTips;
     private Label totalBet;
     private Label betLabel;
+    private Button newGame;
 
 
     public Cashbar(){
@@ -19,19 +20,22 @@ public class Cashbar extends HBox {
         betLabel = new Label("--");
         totalBet = new Label("Total Bet: ");
         submitTips = new Button("Submit Tips");
+        newGame = new Button("New Game");
+        newGame.setDisable(true);
 
-        this.getChildren().addAll(moneyLabel,totalBet,betLabel, submitTips);
+        this.getChildren().addAll(moneyLabel,totalBet,betLabel, submitTips,newGame);
         this.setId("bottomBar");
     }
 
     public void setMoneyLabel(int money) {
-        moneyLabel.setText(Integer.toString(money)+"$");
+        moneyLabel.setText((money)+"$");
     }
     public Button getSubmitTipsButton(){
         return submitTips;
     }
 
     public void setTotalBet(int i) {
-        this.betLabel.setText(Integer.toString(i*3) + "$");
+        this.betLabel.setText((i*3) + "$");
     }
+    public Button getNewGame(){ return newGame; }
 }

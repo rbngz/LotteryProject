@@ -49,6 +49,15 @@ public class LottoController {
             view.getCashBar().setTotalBet((int) newValue);
         }));
 
+        view.getCashBar().getNewGame().setOnAction(event -> {
+            //remove all active tips when "new game" button is pressed
+            for(int i = TipField.totalActive.getValue(); i>0;i--){
+                TipField tipfield = (TipField) view.getTips().getChildren().get(i-1);
+                tipfield.addTip.fire();
+            }
+            view.getCashBar().getNewGame().setDisable(true);
+        });
+
 
 
     }

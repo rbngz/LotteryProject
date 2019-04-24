@@ -36,11 +36,13 @@ public class LotteryWindow extends HBox {
                 for(int j=0;j<TipField.totalActive.getValue();j++) {
                     TipField tipfield = (TipField) view.getTips().getChildren().get(j);
                     if(index == 6){
+
                         if(tipfield.getChildren().get(numbers.get(index)+43).getStyleClass().contains("pressedNum")) {
                             tipfield.getChildren().get(numbers.get(index)+43).getStyleClass().add("correctTip");
                         } else {
                             tipfield.getChildren().get(numbers.get(index)+43).getStyleClass().add("wrongTip");
                         }
+                        view.getCashBar().getNewGame().setDisable(false);
 
                     } else {
                         if (tipfield.getChildren().get(numbers.get(index) - 1).getStyleClass().contains("pressedNum")) {

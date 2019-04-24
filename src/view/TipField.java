@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class TipField extends GridPane {
     public static SimpleIntegerProperty totalActive = new SimpleIntegerProperty();
     SimpleBooleanProperty activeProperty = new SimpleBooleanProperty();
-    Button addTip;
+    public Button addTip;
     Label luckyNumbers;
     public static int index = 0;
     TipField previous;
