@@ -40,11 +40,13 @@ public class DialoguePane extends VBox {
     }
     public void showAllWinners(int[] winnerCount){
         this.getChildren().add(new Label("Jackpot Winners: "+winnerCount[0]));
+        int rightCount = 6;
         for(int i = 1;i<winnerCount.length;i++){
             if(i%2==0) {
-                this.getChildren().add(new Label("Winner " + 1+":"+winnerCount[i]));
+                this.getChildren().add(new Label("Winner " + rightCount +" + "+ 1+": \t"+winnerCount[i]));
             } else {
-                this.getChildren().add(new Label("Winner :"+winnerCount[i]));
+                this.getChildren().add(new Label("Winner "+ rightCount + ": \t"+winnerCount[i]));
+                rightCount--;
             }
         }
     }

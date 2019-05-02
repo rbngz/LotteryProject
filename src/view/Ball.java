@@ -7,13 +7,20 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 
 public class Ball extends StackPane {
+    public static boolean isLuckyNum = false;
     public Ball(int num){
         super();
         Label ball = new Label();
         Label number = new Label(Integer.toString(num));
         number.setStyle("-fx-font-size: 50px");
         this.setWidth(120);
-        Image image = new Image(this.getClass().getClassLoader().getResourceAsStream("images/greyball-hi.png"));
+        String source;
+        if(isLuckyNum){
+            source ="images/luckyball.png";
+        }else {
+            source ="images/greyball-hi.png";
+        }
+        Image image = new Image(this.getClass().getClassLoader().getResourceAsStream(source));
         ImageView imv = new ImageView(image);
         imv.fitWidthProperty().bind(this.widthProperty());
         imv.fitHeightProperty().bind(this.heightProperty());

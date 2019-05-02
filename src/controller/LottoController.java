@@ -23,7 +23,7 @@ public class LottoController {
                 TipField tipfield = (TipField) view.getTips().getChildren().get(i);
                 if (tipfield.getActiveProperty().getValue()) {
                     ArrayList<Integer> tip = new ArrayList<>();
-                    for (int j = 1; j < 50; j++) {
+                    for (int j = 0; j < tipfield.getChildren().size(); j++) {
                         if (tipfield.getChildren().get(j).getStyleClass().contains("pressedNum")) {
                             Button tipped = (Button) tipfield.getChildren().get(j);
                             tip.add(Integer.parseInt(tipped.getText()));
@@ -46,6 +46,7 @@ public class LottoController {
                 view.getDialoguePane().showAllWinners(model.jackpot.runSimulation());
 
                 view.getDialoguePane().showEvaluation(model.tips.evaluate(numbers));
+                model.money.collectWinnings(model.tips.evaluate(numbers));
             } else{
                 Alert errorAlert = new Alert(Alert.AlertType.ERROR);
                 errorAlert.setHeaderText("Tips not valid");

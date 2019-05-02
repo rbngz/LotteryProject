@@ -9,13 +9,22 @@
     -fx-pref-width: 35px;
     -fx-pref-height: 35px;
     -fx-background-radius: 50%;
+    -fx-background-color:
+            linear-gradient(rgba(205, 205, 205, 0.96), rgba(197, 197, 197, 0.95)),
+            radial-gradient(center 50% -40%, radius 200%, rgba(255, 255, 255, 0.95) 45%, rgba(237, 237, 237, 0.98) 50%);
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+
 
 }
 #addTipButton{
     -fx-pref-width: 210;
 }
 .pressedNum{
-    -fx-background-color: blue;
+    -fx-background-color:
+            linear-gradient(rgba(116, 145, 205, 0.96), rgba(142, 151, 197, 0.95)),
+            radial-gradient(center 50% -40%, radius 200%, rgba(186, 209, 255, 0.95) 45%, rgba(162, 170, 237, 0.98) 50%);
 }
 .ball{
 }
@@ -23,8 +32,15 @@
     -fx-spacing: 15px;
 }
 .correctTip {
-    -fx-background-color: green;
+    -fx-background-color:
+            linear-gradient(rgba(146, 205, 133, 0.96), rgba(155, 197, 163, 0.95)),
+            radial-gradient(center 50% -40%, radius 200%, rgba(201, 255, 199, 0.95) 45%, rgba(173, 237, 151, 0.98) 50%);
+
 }
 .wrongTip{
-    -fx-background-color: red;
+    -fx-background-color:
+            linear-gradient(rgba(205, 201, 134, 0.96), rgba(197, 188, 145, 0.95)),
+            radial-gradient(center 50% -40%, radius 200%, rgba(255, 249, 129, 0.95) 45%, rgba(237, 235, 188, 0.98) 50%);
+
+
 }

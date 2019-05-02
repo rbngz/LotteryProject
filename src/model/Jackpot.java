@@ -31,10 +31,6 @@ public class Jackpot {
                 }
             }
         }
-        System.out.println(totalPlayers);
-        System.out.println(chances);
-        System.out.println(Math.random());
-        System.out.println(winnerCount);
         return winnerCount;
 
     }

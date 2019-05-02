@@ -20,7 +20,9 @@ public class LotteryWindow extends HBox {
         int ballNum = 0;
         for (int i = 0;i<7;i++){
             int index = i;
+            if (i==6)Ball.isLuckyNum=true;
             Ball ball = new Ball(numbers.get(i));
+            if (i==6)Ball.isLuckyNum=false;
             this.getChildren().add(ball);
             HBox.setMargin(ball,new Insets(20));
 

@@ -19,4 +19,19 @@ public class Cash {
     public void setMoney(int money) {
         moneyProperty.setValue(money);
     }
+    public void collectWinnings(int[] correctCount){
+        for (int i = 0; i<correctCount.length;i++){
+                switch (correctCount[i]){
+                    case 3: moneyProperty.setValue(moneyProperty.getValue()+200);
+                        break;
+                    case 4: moneyProperty.setValue(moneyProperty.getValue()+400);
+                        break;
+                    case 5: moneyProperty.setValue(moneyProperty.getValue()+500);
+                        break;
+                    case 6: moneyProperty.setValue(moneyProperty.getValue()+1000);
+                        break;
+                }
+
+        }
+    }
 }

@@ -29,6 +29,7 @@ public class Tips {
             if (!(tips.get(i).size() == 7 && tips.get(i).get(6) <= 6)) {
                 allValid = false;
             }
+            System.out.println(tips.get(i));
         }
         return allValid;
     }

@@ -23,8 +23,6 @@ public class TipField extends GridPane {
     public SimpleIntegerProperty tipCount;
     Label tipCountLabel;
     public Button randomTip;
-
-
     public TipField(TipField previous){
         super();
         this.previous = previous;
@@ -92,7 +90,6 @@ public class TipField extends GridPane {
 
             }));
         }
-        //
         luckyNumbers = new Label("Lucky Numbers");
         luckyNumbers.setDisable(true);
         this.add(luckyNumbers,0,8,REMAINING,1);
@@ -121,9 +118,6 @@ public class TipField extends GridPane {
         imv.setFitHeight(15);
         randomTip.setGraphic(imv);
         randomTip.setDisable(true);
-
-
-
         this.getStyleClass().add("tipField");
     }
     public SimpleBooleanProperty getActiveProperty(){
