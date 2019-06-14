@@ -1,8 +1,11 @@
 package view;
 
+import javafx.geometry.HPos;
+import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.TextAlignment;
 import model.Jackpot;
 
 import java.util.ArrayList;
@@ -22,7 +25,7 @@ public class DialoguePane extends VBox {
 
         for (int i = 0; i< tips.size();i++){
 
-            Label tipLabel = new Label(showTip(tips.get(i)));
+            HBox tipLabel = new HBox(showTip(tips.get(i)));
             this.getChildren().add(tipLabel);
         }
     }
@@ -31,13 +34,23 @@ public class DialoguePane extends VBox {
             this.getChildren().add(new Label("Tip " + (i+1) + " right guesses: "+ correctCount[i]));
         }
     }
-    private String showTip(ArrayList<Integer> tip){
-        String tipString = tip.get(0).toString();
-        for (int i = 1; i<6;i++){
-            tipString+= ", "+ tip.get(i);
+    private HBox showTip(ArrayList<Integer> tip){
+        HBox tipNums = new HBox();
+        for (int i = 0; i<5;i++){
+            Label ball = new Label(Integer.toString(tip.get(i)));
+            ball.setPrefSize(30,30);
+            ball.setId("ball");
+            ball.setAlignment(Pos.CENTER);
+            tipNums.getChildren().add(ball);
         }
-        tipString += " + " + tip.get(tip.size()-1);
-        return tipString;
+        tipNums.getChildren().add(new Label(" + "));
+        Label lastBall = new Label(Integer.toString(tip.get(5)));
+        lastBall.setPrefSize(30,30);
+        lastBall.setId("ball");
+        lastBall.setAlignment(Pos.CENTER);
+        tipNums.getChildren().add(lastBall);
+
+        return tipNums;
     }
     public void showAllWinners(int[] winnerCount){
         this.getChildren().add(new Label("Jackpot Winners: "+winnerCount[0]));

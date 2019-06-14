@@ -3,20 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="56982a93-3bfa-4188-9fec-6658285d2f45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/controller/LottoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/controller/LottoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/model/Jackpot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/model/Jackpot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/view/Cashbar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/view/Cashbar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/view/DialoguePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/view/DialoguePane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/view/LottoView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/view/LottoView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/view/TipField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/view/TipField.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LotteryProject/view/lotto.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LotteryProject/view/lotto.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LottoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LottoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Jackpot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Jackpot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Cashbar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Cashbar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/DialoguePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/DialoguePane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/LottoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LottoView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/TipField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/TipField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/lotto.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/lotto.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,6 +31,18 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/TipField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="824">
+              <caret line="130" selection-start-line="130" selection-end-line="130" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/Cashbar.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -56,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/view/DialoguePane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="18" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="18" />
+            <state relative-caret-position="633">
+              <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,15 +74,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/LottoModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -123,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/lotto.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+            <state relative-caret-position="945">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
         </entry>
@@ -235,7 +227,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560523713745" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560526728361" />
     <property name="jdk.selected.JAVA_MODULE" value="10" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -293,12 +285,12 @@
       <workItem from="1559076338517" duration="736000" />
       <workItem from="1559747977667" duration="421000" />
       <workItem from="1559935263349" duration="169000" />
-      <workItem from="1560513418120" duration="3119000" />
+      <workItem from="1560513418120" duration="4972000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78426000" />
+    <option name="totallyTimeSpent" value="80279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -323,7 +315,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3295063" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3708381" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.37040818" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -409,16 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/TipField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/images/random.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -452,27 +434,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/LottoView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/LotteryWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
           <caret line="41" column="70" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/Ball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -489,17 +454,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/LottoView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/TipField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="824">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/lotto.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        <state relative-caret-position="945">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/DialoguePane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="633">
+          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

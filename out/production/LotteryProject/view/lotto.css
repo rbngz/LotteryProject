@@ -53,3 +53,10 @@
     -fx-font-size: 15;
     -fx-font-size: bold;
 }
+
+#ball{
+    -fx-border-color: white;
+    -fx-spacing: 10px;
+    -fx-text-alignment: middle;
+    -fx-border-radius: 50%;
+}
