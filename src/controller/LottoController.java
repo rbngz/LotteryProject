@@ -90,7 +90,7 @@ public class LottoController {
                 tipField.tipCount.setValue(6);
             });
         }
-        view.getCashBar().getJackpotLabel().textProperty().bind(model.jackpot.getValueProperty().asString());
+        view.getCashBar().getJackpotLabel().textProperty().bind(model.jackpot.getValueProperty());
 
 
 

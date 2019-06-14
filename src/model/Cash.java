@@ -22,13 +22,13 @@ public class Cash {
     public void collectWinnings(int[] correctCount){
         for (int i = 0; i<correctCount.length;i++){
                 switch (correctCount[i]){
-                    case 3: moneyProperty.setValue(moneyProperty.getValue()+200);
+                    case 3: moneyProperty.setValue(moneyProperty.getValue()+ (int) (Jackpot.value.getValue()/Jackpot.winnerCount[3]));
                         break;
-                    case 4: moneyProperty.setValue(moneyProperty.getValue()+400);
+                    case 4: moneyProperty.setValue(moneyProperty.getValue()+ (int) (Jackpot.value.getValue()/Jackpot.winnerCount[2]));
                         break;
-                    case 5: moneyProperty.setValue(moneyProperty.getValue()+500);
+                    case 5: moneyProperty.setValue(moneyProperty.getValue()+ (int) (Jackpot.value.getValue()/Jackpot.winnerCount[1]));
                         break;
-                    case 6: moneyProperty.setValue(moneyProperty.getValue()+1000);
+                    case 6: moneyProperty.setValue(Jackpot.value.getValue());
                         break;
                 }
 

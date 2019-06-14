@@ -60,3 +60,7 @@
     -fx-text-alignment: middle;
     -fx-border-radius: 50%;
 }
+#jackpotLabel{
+    -fx-font-size: 25px;
+    -fx-text-fill: white;
+}

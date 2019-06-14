@@ -27,6 +27,7 @@ public class Cashbar extends HBox {
         newGame = new Button("New Game");
         newGame.setDisable(true);
         jackpotLabel = new Label("Jackpot: 0$");
+        jackpotLabel.setId("jackpotLabel");
 
         spacer = new Region();
         HBox.setHgrow(spacer, Priority.ALWAYS);
