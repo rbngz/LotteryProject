@@ -39,7 +39,9 @@ public class LottoView {
         gameRoot.setTop(menu);
         gameRoot.setBottom(cashBar);
         gameRoot.setCenter(gameBox);
-        gameRoot.setStyle("-fx-background-color: rgb(255,104,104)");
+        gameRoot.setStyle("    -fx-background-color:\n" +
+                "            linear-gradient(rgba(65,118,226,0.96), rgba(142, 151, 197, 0.95)),\n" +
+                "            radial-gradient(center 50% -40%, radius 200%, rgba(46,94,255,0.95) 45%, rgba(99,105,237,0.98) 50%);\n");
 
 
         Scene gameScene = new Scene(gameRoot);

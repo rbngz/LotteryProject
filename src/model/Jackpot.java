@@ -1,11 +1,17 @@
 package model;
 
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+
 import java.text.DecimalFormat;
 
 public class Jackpot {
-    int value;
+    //int value;
+    SimpleIntegerProperty value;
+    SimpleStringProperty valueString;
     public Jackpot(){
-        value = 3000000;
+        value = new SimpleIntegerProperty(300000);
+        valueString = new SimpleStringProperty();
     }
 
 
@@ -31,7 +37,16 @@ public class Jackpot {
                 }
             }
         }
+        if(winnerCount[0]==0){ //no jackpot winners
+            value.setValue(value.getValue()+(totalPlayers*3));
+        } else{
+            value.setValue(3000000);
+        }
         return winnerCount;
 
     }
+    public SimpleIntegerProperty getValueProperty(){
+        return value;
+    }
+
 }

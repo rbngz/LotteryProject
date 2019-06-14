@@ -4,6 +4,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
+import javafx.scene.layout.Region;
 import model.Cash;
 
 public class Cashbar extends HBox {
@@ -12,6 +13,9 @@ public class Cashbar extends HBox {
     private Label totalBet;
     private Label betLabel;
     private Button newGame;
+    private Label jackpotLabel;
+    private Region spacer;
+
 
 
     public Cashbar(){
@@ -22,8 +26,13 @@ public class Cashbar extends HBox {
         submitTips = new Button("Submit Tips");
         newGame = new Button("New Game");
         newGame.setDisable(true);
+        jackpotLabel = new Label("Jackpot: 0$");
 
-        this.getChildren().addAll(moneyLabel,totalBet,betLabel, submitTips,newGame);
+        spacer = new Region();
+        HBox.setHgrow(spacer, Priority.ALWAYS);
+
+
+        this.getChildren().addAll(moneyLabel,totalBet,betLabel, submitTips,newGame,spacer,jackpotLabel);
         this.setId("bottomBar");
     }
 
@@ -33,6 +42,7 @@ public class Cashbar extends HBox {
     public Button getSubmitTipsButton(){
         return submitTips;
     }
+    public Label getJackpotLabel(){ return jackpotLabel; }
 
     public void setTotalBet(int i) {
         this.betLabel.setText((i*3) + "$");

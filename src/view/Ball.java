@@ -13,7 +13,7 @@ public class Ball extends StackPane {
         Label ball = new Label();
         Label number = new Label(Integer.toString(num));
         number.setStyle("-fx-font-size: 50px");
-        this.setWidth(120);
+        this.setWidth(112);
         String source;
         if(isLuckyNum){
             source ="images/luckyball.png";

@@ -13,6 +13,7 @@ public class DialoguePane extends VBox {
     public DialoguePane(){
         super();
         this.setPrefWidth(200);
+        this.getStyleClass().add("dialoguePane");
     }
     public void updateDialogue(ArrayList<ArrayList<Integer>> tips){
         this.getChildren().clear();

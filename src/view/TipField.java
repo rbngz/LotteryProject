@@ -128,6 +128,7 @@ public class TipField extends GridPane {
             this.getChildren().get(i).setDisable(true);
         }
     }
+
     public Button getRandomTip(){
         return randomTip;
     }
