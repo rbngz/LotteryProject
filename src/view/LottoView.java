@@ -48,6 +48,7 @@ public class LottoView {
         gameScene.getStylesheets().add(
                 getClass().getResource("lotto.css").toExternalForm());
         stage.setScene(gameScene);
+        stage.setResizable(false);
 
 
         stage.show();
